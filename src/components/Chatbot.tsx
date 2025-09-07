@@ -100,7 +100,7 @@ export const Chatbot = () => {
             </div>
             <div>
               <h3 className="font-semibold">GlowGuide Assistant</h3>
-              <p className="text-xs text-muted-foreground">சருமப் பராமரிப்பு உதவியாளர்</p>
+              <p className="text-xs text-muted-foreground">Skincare Helper</p>
             </div>
           </div>
           <Button

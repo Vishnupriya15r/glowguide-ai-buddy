@@ -28,10 +28,6 @@ export const HeroSection = () => {
                 Start your skincare journey with confidence. Get personalized, science-based advice 
                 that's gentle, inclusive, and judgment-free.
               </p>
-              
-              <p className="text-sm text-muted-foreground italic">
-                உங்கள் சருமம் கனிவான பராமரிப்பிற்கு தகுதியானது
-              </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button 
@@ -66,14 +62,7 @@ export const HeroSection = () => {
               </div>
               
               {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-card/80 backdrop-blur-sm rounded-2xl p-4 shadow-soft animate-float">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-glow-green rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium">AI-Powered</span>
-                </div>
-              </div>
-              
-              <div className="absolute -bottom-4 -left-4 bg-card/80 backdrop-blur-sm rounded-2xl p-4 shadow-soft animate-float" style={{ animationDelay: '1s' }}>
+              <div className="absolute -bottom-4 -left-4 bg-card/80 backdrop-blur-sm rounded-2xl p-4 shadow-soft animate-float">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-glow-pink rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium">Privacy First</span>

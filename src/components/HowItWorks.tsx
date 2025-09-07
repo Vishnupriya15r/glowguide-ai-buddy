@@ -5,22 +5,19 @@ export const HowItWorks = () => {
     {
       icon: Camera,
       title: "Analyze Photo",
-      tamil: "புகைப்படம் பகுப்பாய்வு",
       description: "Upload a selfie or take a photo with your camera. Our AI analyzes your skin type and concerns instantly.",
       color: "glow-pink"
     },
     {
       icon: Brain,
       title: "Educational Advice",
-      tamil: "கல்வி ஆலோசனை",
       description: "Get personalized home remedies and learn about skincare chemistry - no product promotion, just education.",
       color: "glow-green"
     },
     {
       icon: MapPin,
       title: "Local Dermatologist",
-      tamil: "உள்ளூர் தோல் மருத்துவர்",
-      description: "Find qualified dermatologists near you in Tamil Nadu for professional consultation when needed.",
+      description: "Find qualified dermatologists near you for professional consultation when needed.",
       color: "glow-lavender"
     }
   ];
@@ -34,9 +31,6 @@ export const HowItWorks = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Three simple steps to start your personalized skincare journey
-          </p>
-          <p className="text-sm text-muted-foreground mt-2 italic">
-            உங்கள் தனிப்பட்ட சருமப் பராமரிப்பு பயணத்தைத் தொடங்க மூன்று எளிய படிகள்
           </p>
         </div>
 
@@ -57,8 +51,6 @@ export const HowItWorks = () => {
                   </span>
                   <h3 className="text-xl font-semibold">{step.title}</h3>
                 </div>
-                
-                <p className="text-sm text-muted-foreground italic">{step.tamil}</p>
                 
                 <p className="text-muted-foreground leading-relaxed">
                   {step.description}

@@ -26,10 +26,7 @@ export const SkinAnalysis = ({ result }: SkinAnalysisProps) => {
               Your <span className="text-primary">Skin Analysis</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Based on AI analysis of your photo
-            </p>
-            <p className="text-sm text-muted-foreground italic">
-              உங்கள் புகைப்படத்தின் AI பகுப்பாய்வின் அடிப்படையில்
+              Based on analysis of your photo
             </p>
           </div>
 
@@ -53,9 +50,6 @@ export const SkinAnalysis = ({ result }: SkinAnalysisProps) => {
                   <h4 className="font-semibold mb-3 flex items-center gap-2">
                     <AlertTriangle className="w-5 h-5 text-accent-foreground" />
                     Identified Concerns
-                    <span className="text-sm text-muted-foreground italic ml-2">
-                      (கண்டறியப்பட்ட கவலைகள்)
-                    </span>
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {result.issues.map((issue, index) => (
@@ -81,9 +75,6 @@ export const SkinAnalysis = ({ result }: SkinAnalysisProps) => {
                   <h3 className="text-2xl font-bold">Natural Home Remedies</h3>
                   <p className="text-muted-foreground">
                     Gentle, natural approaches you can try
-                  </p>
-                  <p className="text-sm text-muted-foreground italic">
-                    நீங்கள் முயற்சி செய்யக்கூடிய மென்மையான, இயற்கையான அணுகுமுறைகள்
                   </p>
                 </div>
               </div>
@@ -116,9 +107,6 @@ export const SkinAnalysis = ({ result }: SkinAnalysisProps) => {
                   <p className="text-muted-foreground">
                     Understanding the science behind effective ingredients
                   </p>
-                  <p className="text-sm text-muted-foreground italic">
-                    பயனுள்ள பொருட்களின் பின்னணியில் உள்ள அறிவியலைப் புரிந்துகொள்வது
-                  </p>
                 </div>
               </div>
               
@@ -135,9 +123,6 @@ export const SkinAnalysis = ({ result }: SkinAnalysisProps) => {
                   <strong>Important:</strong> This is educational information only. 
                   Always consult a dermatologist before starting new treatments, 
                   especially for persistent or severe skin concerns.
-                </p>
-                <p className="text-xs text-muted-foreground italic mt-1">
-                  எப்போதும் புதிய சிகிச்சைகளைத் தொடங்கும் முன் தோல் மருத்துவரை அணுகவும்
                 </p>
               </div>
             </div>

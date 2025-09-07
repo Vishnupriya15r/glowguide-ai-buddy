@@ -58,15 +58,16 @@ export const DoctorFinder = () => {
     if (!city.trim()) return;
     
     setIsLoading(true);
-    // Mock coordinates for Tamil Nadu cities
+    // Mock coordinates for major Indian cities
     const cityCoords: Record<string, { lat: number; lng: number }> = {
+      'delhi': { lat: 28.6139, lng: 77.2090 },
+      'mumbai': { lat: 19.0760, lng: 72.8777 },
+      'bangalore': { lat: 12.9716, lng: 77.5946 },
       'chennai': { lat: 13.0827, lng: 80.2707 },
-      'madurai': { lat: 9.9252, lng: 78.1198 },
-      'coimbatore': { lat: 11.0168, lng: 76.9558 },
-      'salem': { lat: 11.664, lng: 78.146 },
-      'tirunelveli': { lat: 8.7139, lng: 77.7567 },
-      'erode': { lat: 11.3410, lng: 77.7172 },
-      'vellore': { lat: 12.9165, lng: 79.1325 }
+      'kolkata': { lat: 22.5726, lng: 88.3639 },
+      'hyderabad': { lat: 17.3850, lng: 78.4867 },
+      'pune': { lat: 18.5204, lng: 73.8567 },
+      'ahmedabad': { lat: 23.0225, lng: 72.5714 }
     };
 
     const coords = cityCoords[city.toLowerCase()];
@@ -76,7 +77,7 @@ export const DoctorFinder = () => {
     } else {
       toast({
         title: "City not found",
-        description: "Please try Chennai, Madurai, Coimbatore, Salem, etc.",
+        description: "Please try Delhi, Mumbai, Bangalore, Chennai, etc.",
         variant: "destructive"
       });
       setIsLoading(false);
@@ -90,10 +91,10 @@ export const DoctorFinder = () => {
         {
           id: '1',
           name: 'Dr. Priya Sharma',
-          clinic: 'Chennai Dermatology Center',
-          address: '123 Anna Salai, Chennai - 600002',
+          clinic: 'Metro Dermatology Center',
+          address: '123 Main Road, Central District',
           distance_km: 2.3,
-          phone: '+91-44-2851-2345',
+          phone: '+91-11-2851-2345',
           rating: 4.8,
           specialization: 'Clinical Dermatology'
         },
@@ -101,9 +102,9 @@ export const DoctorFinder = () => {
           id: '2',
           name: 'Dr. Rajesh Kumar',
           clinic: 'Skin Care Specialists',
-          address: '456 Mount Road, Chennai - 600006',
+          address: '456 Medical Complex, City Center',
           distance_km: 3.7,
-          phone: '+91-44-2852-6789',
+          phone: '+91-11-2852-6789',
           rating: 4.6,
           specialization: 'Cosmetic Dermatology'
         },
@@ -111,9 +112,9 @@ export const DoctorFinder = () => {
           id: '3',
           name: 'Dr. Meera Nair',
           clinic: 'Advanced Skin Clinic',
-          address: '789 T. Nagar, Chennai - 600017',
+          address: '789 Health Plaza, Downtown',
           distance_km: 5.1,
-          phone: '+91-44-2853-9012',
+          phone: '+91-11-2853-9012',
           rating: 4.7,
           specialization: 'Pediatric Dermatology'
         }
@@ -137,11 +138,8 @@ export const DoctorFinder = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Find <span className="text-primary">Dermatologists</span> Near You
             </h2>
-            <p className="text-lg text-muted-foreground mb-2">
-              Connect with qualified skin specialists in Tamil Nadu
-            </p>
-            <p className="text-sm text-muted-foreground italic">
-              தமிழ்நாட்டில் தகுதி வாய்ந்த சருமநல நிபுணர்களுடன் இணைக்கவும்
+            <p className="text-lg text-muted-foreground">
+              Connect with qualified skin specialists near you
             </p>
           </div>
 
@@ -185,7 +183,7 @@ export const DoctorFinder = () => {
                   Search by City
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Enter your city name (Chennai, Madurai, Coimbatore, etc.)
+                  Enter your city name (Delhi, Mumbai, Bangalore, etc.)
                 </p>
                 <div className="flex gap-2">
                   <input
@@ -283,9 +281,6 @@ export const DoctorFinder = () => {
                     <p className="text-muted-foreground">
                       These are suggested dermatologists based on location. Please verify credentials, 
                       availability, and book appointments directly. GlowGuide provides suggestions only.
-                    </p>
-                    <p className="text-xs text-muted-foreground italic">
-                      இவை இடத்தின் அடிப்படையில் பரிந்துரைக்கப்பட்ட தோல் மருத்துவர்கள். தயவுசெய்து நேரடியாக சான்றுகளைச் சரிபார்க்கவும்
                     </p>
                   </div>
                 </div>

@@ -121,11 +121,8 @@ export const ImageUpload = ({ onImageAnalyzed }: ImageUploadProps) => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Start Your <span className="text-primary">Skin Analysis</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-2">
+            <p className="text-lg text-muted-foreground">
               Upload a clear photo of your face for personalized skincare insights
-            </p>
-            <p className="text-sm text-muted-foreground italic">
-              தனிப்பயனாக்கப்பட்ட சருமப் பராமரிப்பு நுண்ணறிவுகளுக்காக உங்கள் முகத்தின் தெளிவான புகைப்படத்தைப் பதிவேற்றவும்
             </p>
           </div>
 
@@ -233,9 +230,6 @@ export const ImageUpload = ({ onImageAnalyzed }: ImageUploadProps) => {
                   <p className="text-muted-foreground">
                     Your images are analyzed locally and not stored permanently unless you consent. 
                     We don't sell your data or use it for advertising.
-                  </p>
-                  <p className="text-xs text-muted-foreground italic">
-                    உங்கள் படங்கள் உள்ளூரில் பகுப்பாய்வு செய்யப்படுகின்றன, நீங்கள் சம்மதிக்காத வரை நிரந்தரமாக சேமிக்கப்படாது
                   </p>
                 </div>
               </div>
