@@ -22,6 +22,13 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
+        },
+        glow: {
+          pink: "hsl(var(--glow-pink))",
+          green: "hsl(var(--glow-green))",
+          lavender: "hsl(var(--glow-lavender))",
+          cream: "hsl(var(--glow-cream))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
